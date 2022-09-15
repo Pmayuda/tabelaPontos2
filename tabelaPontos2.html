@@ -1,0 +1,50 @@
+<html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+    <meta charset="UTF-8">
+      <title> Imersão Dev - Aula 06 </title>
+      <link rel="stylesheet" type="text/css" href="tabelaPontos2.css">
+</head>
+
+<body>
+  <div class="entradas">
+    <h1>Tabela de classificação</h1>
+    <h3>Adicione um novo jogador:</h3>
+    <input type="text" id="nomePlayer" placeholder="Nome">
+    <hr>
+    <input type="text" id="iconPlayer" placeholder="URL da Imagem">
+    <hr>
+    <button class="adicionarBtn" onclick="adicionarJogador()">Adicionar</button>
+    <hr>
+    <button class="zerarBtn" onclick="zerar()">Zerar Pontuação</button>
+  </div>
+  <div class="tabela">
+    <table style="width:100%">
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>Nome</th>
+          <th>Vitórias</th>
+          <th>Empates</th>
+          <th>Derrotas</th>
+          <th>Pontos</th>
+          <th colspan="4">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaJogadores">
+      </tbody>
+    </table>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+
+  <script type="text/javascript" src="tabelaPontos2.js"></script>
+
+</body>
+
+</html>
